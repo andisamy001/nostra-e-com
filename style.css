@@ -1,0 +1,309 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:'Poppins',sans-serif;
+}
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    padding:13px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    background-color: #ffff;
+    position:sticky;
+    top:0;
+    opacity:0.8;
+}
+.navbar-links{
+    display:flex;
+    justify-content: space-around;
+    color:#232c;
+    column-gap:20px;
+    text-align: center;
+    margin-top:5px;
+}
+.navbar-links a{
+    text-decoration: none;
+}
+.navbar-links a:hover{
+    text-decoration:underline;
+    color:#232c;
+} 
+.navbar-menu-taggle{
+    display:none;
+}
+
+/*side navebar*/
+.side-navbar{
+    width:50%;
+    height:100%;
+    background-color:black;
+    opacity:0.9;
+    box-shadow:50px,50px,50px rgb(205, 50, 58);
+    position:fixed;
+    top:0%;
+    left:-70%;
+    padding:10px;
+    color:white;
+    display:block;
+    transition: 2s;
+    z-index:2;
+    border-radius: 30px;
+    background-image:url('https://source.unsplash.com/random/300x300?design')
+    
+    
+} 
+.side-navbar-link a{
+    color:red;
+    text-decoration: none;
+    margin-left:40px;
+    font-weight: bold;
+    
+}
+.side-navbar-link{
+    margin-bottom:20px;
+}
+.body{
+    width:50px;
+    height:100px;
+    background-color: yellow;
+}
+.heading{
+    display:flex;
+    justify-content: center;
+   padding:40px;
+}
+.heading-button{
+    background-color:aqua;
+    padding:20px;
+    border:none;
+    border-radius:30%;
+    
+}
+
+.service-container1{
+    display:flex;
+    justify-content: space-between;
+}
+img{
+    border-radius: 20%;
+}
+.service-container{
+    display:flex;
+    flex-direction: row;
+    margin-top:20px;
+    gap:20px;
+
+}
+.service-container div{
+   background-color: rgba(30, 197, 183, 0.733);
+   padding:5px;
+   border-radius: 20px;
+}
+.new-arrival{
+    display:flex;
+    justify-content:space-around;
+    gap:10px;
+    flex-wrap: wrap;
+    margin-top:20px;
+   
+}
+.new-arrival-container{
+    position:relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:white;
+    position:absolute;
+    top:50%;
+    left:30%;
+    z-index:0.8;
+    border:none;
+    border-radius: 20%;
+}
+.news{
+    padding-top:30px;
+}
+.search{
+    padding-top: 15px;
+    padding-bottom:15px;
+    padding-left:30%;
+    padding-right:30%;
+    border-style: solid;
+    
+}
+.subscribe-btn{
+    padding:5px;
+    background-color:red;
+    border-radius: 20%;
+    margin-top:5px;
+    color:white;
+    margin-bottom:10px;
+}
+.footer{
+    background-color:transparent 0.5;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom:5px;
+    background-color:#ffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0.8;
+    
+}
+.footer-container{
+    color:black;
+   
+    
+}
+/*media querry*/
+@media screen and (max-width:700px){
+     .navbar-menu-taggle{
+        display:block;
+     }
+    
+     .navbar-links{
+        display:none;
+    }
+    .heading{
+        flex-direction: column;
+        }
+    .service-container1{
+        display:flex;
+        flex-direction:column;
+        padding:10px;
+        
+        }
+        .service-container{
+            display:flex;
+            flex-direction: column;
+            margin-top:20px;
+            gap:20px;
+        }
+        /*collection page style in media querry*/
+        .collection-search{
+            display:relaive;
+            left:100px;
+       
+        }  
+        }
+        
+/*collection page style*/
+.search{
+   display:flex;
+   width:80%;
+   padding:15px;
+   border-radius: 20px;
+   margin:10px;
+   justify-content: center;
+   justify-content: space-between;
+   text-align:center;
+
+}
+.collection-search{
+    border-color:none;
+    border-color:transparent;
+    width:100%;
+}
+.collection-search:focus{
+    outline:none;
+}
+.collection h1{
+    margin-left:30px;
+    margin-top:50px;
+}
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis:20%;
+    gap:15px;
+    padding:10px;
+    justify-content: space-around;
+    text-align:center;
+}
+.product{
+    flex-basis:20%;
+    justify-content: space-around;
+}
+/*cantact page*/
+.contact{
+
+    width:30%;
+    height: 80vh;
+    margin:10px;
+    text-align:left;
+    padding-left:20px;
+    border-radius:20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value (0.5) to change the opacity */
+    
+    
+   
+}
+
+.contact-heading{
+    text-align:center;
+    color:rgb(255, 0, 0);
+    padding-top:20px;
+}
+.input-name{
+    padding:15px;
+    width:70%;
+    margin-bottom:10px;
+    border-radius:20px;
+    border:none;
+}
+.input-gmail{
+    padding:15px;
+    width:70%;
+    margin-bottom:10px;
+    border-radius:20px;
+    border:none;
+}
+.input-message{
+    width:70%;
+    padding:15px;
+    padding-bottom:40px;
+    border-radius:20px;
+    border:none;
+}
+.contact-submitbtn{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:10px;
+    margin-top:10px;
+    margin-left:5px;
+    border:none;
+}
+.contact-cancelbtn{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:10px;
+    margin-top:10px;
+    margin-left:5px;
+    border:none;
+}
+@media screen and (max-width:700px){
+    .contact{
+        display:flex;
+        flex-direction:column;
+        justify-content: left;
+        height:80vh;
+        width:80%;
+    }
+}
+    .contact-body {
+        background-image: url('https://source.unsplash.com/random/200x200/?fashion/?fashion shirts');
+        background-size:cover;
+        
+        
+    }
+    
+
